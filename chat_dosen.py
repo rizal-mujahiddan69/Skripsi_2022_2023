@@ -1,35 +1,41 @@
 import configparser as confp
 
 class chat_dos:
-    def __init__(self):
-        conf = confp.ConfigParser()
-        conf.read('data_chat_dosen.conf')
-
-        nama_asli = conf['mahasiswa']['NAMA']
+    def __init__(self,nama_data):
+        self.conf = confp.ConfigParser()
+        self.conf.read(nama_data)
+    
+    def tulis(self):
+        self.nama_asli = self.conf['mahasiswa']['NAMA']
         # nama_asli = input("Tuliskan Nama Lengkap:\n")
         # nama_asli = nama_asli if nama_asli!="" else "Rizal Mujahiddan"
 
-        nim = conf['mahasiswa']['NIM']
-        # nim       = input("\nTuliskan NIM Anda:\n")
-        # nim       = nim if nim!="" else "G64190069"
+        self.nim = self.conf['mahasiswa']['NIM']
+        # self.nim       = input("\nTuliskan NIM Anda:\n")
+        # self.nim       = self.nim if self.nim!="" else "G64190069"
 
-        jurusan = conf['mahasiswa']['JURUSAN']
-        # jurusan   = input("\nTuliskan jurusan anda:\n")
-        # jurusan   = jurusan if jurusan!="" else "Ilmu Komputer"
+        self.jurusan = self.conf['mahasiswa']['JURUSAN']
+        # self.jurusan   = input("\nTuliskan self.jurusan anda:\n")
+        # self.jurusan   = self.jurusan if self.jurusan!="" else "Ilmu Komputer"
 
-        pembukaan = "Assalamualaikum wr.wb. Kenalkan Nama saya {} ({}) Jurusan {}. ".format(nama_asli,nim,jurusan)
+        self.pembukaan = "Assalamualaikum wr.wb. Kenalkan Nama saya {} ({}) Jurusan {}. ".format(self.nama_asli,self.nim,self.jurusan)
 
-        nama_dosen = conf['dosen']['NAMA']
-        # nama_dosen = input("\nMasukkan nama_dosen:\n")
-        # nama_dosen = nama_dosen if nama_dosen!="" else "Wulandari"
+        self.nama_dosen = self.conf['dosen']['NAMA']
+        # self.nama_dosen = input("\nMasukkan self.nama_dosen:\n")
+        # self.nama_dosen = self.nama_dosen if self.nama_dosen!="" else "Wulandari"
 
-        jk_dosen = conf['dosen']['JK']
-        # jk_dosen   = input("\njenis kelamin(L/P):\n").lower()
-        # jk_dosen   = jk_dosen if jk_dosen!="" else "p"
+        self.jk_dosen = self.conf['dosen']['JK']
+        # self.jk_dosen   = input("\njenis kelamin(L/P):\n").lower()
+        # self.jk_dosen   = self.jk_dosen if self.jk_dosen!="" else "p"
 
-        maaf = "Maaf apabila mengganggu waktu {} {}. ".format("Ibu" if jk_dosen[0]=="p" else "Bapak",nama_dosen)
-        keperluan = input("\nTuliskan Keperluan Anda:\n")
-        penutup = ". Terima kasih atas perhatiannya."
+        self.nama_dosen = "Ibu" if self.jk_dosen[0]=="p" else "Pak" + self.nama_dosen
 
-        tulisan_wa = pembukaan + maaf + keperluan + penutup
+        self.maaf = "Maaf apabila mengganggu waktu {}. ".format(self.nama_dosen)
+        self.keperluan = input("\nTuliskan Keperluan Anda:\n")
+        self.penutup = ". Terima kasih atas perhatiannya. Waalaikumussalam wr.wb"
+
+        tulisan_wa = self.pembukaan + self.maaf + self.keperluan + self.penutup
         return ("\n\n\n\n"+tulisan_wa)
+
+cek_chat = chat_dos('data_chat_dosen.conf').tulis()
+print(cek_chat)
