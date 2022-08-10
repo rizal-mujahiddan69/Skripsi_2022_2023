@@ -24,8 +24,6 @@ def time_in_range(start, end, current):
 start = datetime.time(8, 0, 0)
 end = datetime.time(17, 0, 0)
 
-
-
 # masukkan class chat_dosen ke selenium yaa
 
 chat_dosku = chat_dos('data_chat_dosen.conf') 
@@ -34,6 +32,8 @@ tulisan = chat_dosku.tulis()
 driver = webdriver.Chrome("chromedriver")
 
 driver.get("https://web.whatsapp.com")
+print("Scan Me heula , setelah itu tekan enter")
+input()
 
 # def reps():
 #     print("Do you want to send more msg to anyone")
@@ -52,7 +52,7 @@ def msg():
 
     name = chat_dosku.nama_dosen
     message = tulisan
-
+    print(name)
     # Find Whom to message     
     try:
         # Count = int(input("Enter the message count:"))

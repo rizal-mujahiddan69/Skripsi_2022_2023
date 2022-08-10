@@ -27,15 +27,16 @@ class chat_dos:
         self.jk_dosen = self.conf['dosen']['JK']
         # self.jk_dosen   = input("\njenis kelamin(L/P):\n").lower()
         # self.jk_dosen   = self.jk_dosen if self.jk_dosen!="" else "p"
-
-        self.nama_dosen = "Ibu" if self.jk_dosen[0]=="p" else "Pak" + self.nama_dosen
+        namanya = "Ibu " if self.jk_dosen[0]=="p" else "Pak"
+        self.nama_dosen = namanya + self.nama_dosen
 
         self.maaf = "Maaf apabila mengganggu waktu {}. ".format(self.nama_dosen)
         self.keperluan = input("\nTuliskan Keperluan Anda:\n")
         self.penutup = ". Terima kasih atas perhatiannya. Waalaikumussalam wr.wb"
 
         tulisan_wa = self.pembukaan + self.maaf + self.keperluan + self.penutup
-        return ("\n\n\n\n"+tulisan_wa)
+        # print(self.nama_dosen)
+        return tulisan_wa
 
-cek_chat = chat_dos('data_chat_dosen.conf').tulis()
-print(cek_chat)
+# cek_chat = chat_dos('data_chat_dosen.conf').tulis()
+# print(cek_chat)
