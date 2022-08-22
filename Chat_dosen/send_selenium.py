@@ -52,12 +52,13 @@ def msg():
 
     name = chat_dosku.nama_dosen
     message = tulisan
-    print(name)
+    # print(name)
     # Find Whom to message     
     try:
         # Count = int(input("Enter the message count:"))
         Count = 1
         user = driver.find_element("xpath","//span[@title='{}']".format(name))
+        print(user)
         user.click()
     except:
         msg()
