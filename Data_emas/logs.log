@@ -1,0 +1,1035 @@
+2023-03-22 01:52:39,118:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-22 01:52:39,118:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-22 01:52:39,118:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-22 01:52:39,118:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-03-22 01:52:39,547:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:41,285:INFO:PyCaret TSForecastingExperiment
+2023-03-22 01:52:41,285:INFO:Logging name: ts-default-name
+2023-03-22 01:52:41,285:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2023-03-22 01:52:41,285:INFO:version 3.0.0
+2023-03-22 01:52:41,285:INFO:Initializing setup()
+2023-03-22 01:52:41,285:INFO:self.USI: 92c1
+2023-03-22 01:52:41,285:INFO:self._variable_keys: {'y_train_transformed', 'X_test_transformed', 'all_sps_to_use', 'candidate_sps', 'model_engines', 'enforce_pi', 'fold_param', 'data', 'X_test', 'exogenous_present', 'primary_sp_to_use', 'y_train', 'y_test_transformed', 'enforce_exogenous', 'gpu_param', 'seed', 'idx', 'html_param', 'USI', 'fh', 'pipeline', 'logging_param', 'fold_generator', 'significant_sps', 'X_transformed', 'n_jobs_param', 'index_type', '_ml_usecase', 'memory', 'exp_id', 'X_train_transformed', 'approach_type', 'strictly_positive', 'X_train', 'exp_name_log', 'y', 'significant_sps_no_harmonics', 'y_transformed', 'gpu_n_jobs_param', 'log_plots_param', 'y_test', 'X', '_available_plots', 'seasonality_present'}
+2023-03-22 01:52:41,285:INFO:Checking environment
+2023-03-22 01:52:41,286:INFO:python_version: 3.9.16
+2023-03-22 01:52:41,286:INFO:python_build: ('main', 'Mar  1 2023 18:30:21')
+2023-03-22 01:52:41,286:INFO:machine: AMD64
+2023-03-22 01:52:41,286:INFO:platform: Windows-10-10.0.22621-SP0
+2023-03-22 01:52:41,286:INFO:Memory: svmem(total=6387134464, available=1567133696, percent=75.5, used=4820000768, free=1567133696)
+2023-03-22 01:52:41,286:INFO:Physical Core: 4
+2023-03-22 01:52:41,286:INFO:Logical Core: 8
+2023-03-22 01:52:41,286:INFO:Checking libraries
+2023-03-22 01:52:41,286:INFO:System:
+2023-03-22 01:52:41,286:INFO:    python: 3.9.16 (main, Mar  1 2023, 18:30:21) [MSC v.1916 64 bit (AMD64)]
+2023-03-22 01:52:41,286:INFO:executable: c:\Users\ASUS\.conda\envs\ml\python.exe
+2023-03-22 01:52:41,286:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-03-22 01:52:41,286:INFO:PyCaret required dependencies:
+2023-03-22 01:52:41,286:INFO:                 pip: 22.3.1
+2023-03-22 01:52:41,286:INFO:          setuptools: 60.10.0
+2023-03-22 01:52:41,286:INFO:             pycaret: 3.0.0
+2023-03-22 01:52:41,287:INFO:             IPython: 8.3.0
+2023-03-22 01:52:41,287:INFO:          ipywidgets: 7.6.5
+2023-03-22 01:52:41,287:INFO:                tqdm: 4.64.1
+2023-03-22 01:52:41,287:INFO:               numpy: 1.23.5
+2023-03-22 01:52:41,287:INFO:              pandas: 1.5.3
+2023-03-22 01:52:41,287:INFO:              jinja2: 3.1.2
+2023-03-22 01:52:41,287:INFO:               scipy: 1.9.1
+2023-03-22 01:52:41,287:INFO:              joblib: 1.2.0
+2023-03-22 01:52:41,287:INFO:             sklearn: 1.2.1
+2023-03-22 01:52:41,287:INFO:                pyod: 1.0.9
+2023-03-22 01:52:41,287:INFO:            imblearn: 0.10.1
+2023-03-22 01:52:41,287:INFO:   category_encoders: 2.6.0
+2023-03-22 01:52:41,287:INFO:            lightgbm: 3.3.4
+2023-03-22 01:52:41,287:INFO:               numba: 0.56.4
+2023-03-22 01:52:41,287:INFO:            requests: 2.28.1
+2023-03-22 01:52:41,287:INFO:          matplotlib: 3.6.2
+2023-03-22 01:52:41,287:INFO:          scikitplot: 0.3.7
+2023-03-22 01:52:41,287:INFO:         yellowbrick: 1.5
+2023-03-22 01:52:41,287:INFO:              plotly: 5.13.1
+2023-03-22 01:52:41,288:INFO:             kaleido: 0.2.1
+2023-03-22 01:52:41,288:INFO:         statsmodels: 0.13.5
+2023-03-22 01:52:41,288:INFO:              sktime: 0.16.1
+2023-03-22 01:52:41,288:INFO:               tbats: 1.1.1
+2023-03-22 01:52:41,288:INFO:            pmdarima: 1.8.5
+2023-03-22 01:52:41,288:INFO:              psutil: 5.9.4
+2023-03-22 01:52:41,288:INFO:PyCaret optional dependencies:
+2023-03-22 01:52:44,574:INFO:                shap: 0.41.0
+2023-03-22 01:52:44,574:INFO:           interpret: 0.3.2
+2023-03-22 01:52:44,574:INFO:                umap: 0.5.3
+2023-03-22 01:52:44,574:INFO:    pandas_profiling: 4.1.1
+2023-03-22 01:52:44,575:INFO:  explainerdashboard: 0.4.2.1
+2023-03-22 01:52:44,575:INFO:             autoviz: 0.1.58
+2023-03-22 01:52:44,575:INFO:           fairlearn: 0.7.0
+2023-03-22 01:52:44,575:INFO:             xgboost: 1.7.3
+2023-03-22 01:52:44,575:INFO:            catboost: 1.1.1
+2023-03-22 01:52:44,575:INFO:              kmodes: 0.12.2
+2023-03-22 01:52:44,575:INFO:             mlxtend: 0.21.0
+2023-03-22 01:52:44,575:INFO:       statsforecast: 1.4.0
+2023-03-22 01:52:44,575:INFO:        tune_sklearn: 0.4.5
+2023-03-22 01:52:44,575:INFO:                 ray: 2.0.1
+2023-03-22 01:52:44,575:INFO:            hyperopt: 0.2.7
+2023-03-22 01:52:44,575:INFO:              optuna: 2.10.1
+2023-03-22 01:52:44,575:INFO:               skopt: 0.9.0
+2023-03-22 01:52:44,575:INFO:              mlflow: 1.30.0
+2023-03-22 01:52:44,575:INFO:              gradio: 3.22.1
+2023-03-22 01:52:44,575:INFO:             fastapi: 0.95.0
+2023-03-22 01:52:44,575:INFO:             uvicorn: 0.21.1
+2023-03-22 01:52:44,575:INFO:              m2cgen: 0.10.0
+2023-03-22 01:52:44,576:INFO:           evidently: 0.2.6
+2023-03-22 01:52:44,576:INFO:               fugue: 0.8.1
+2023-03-22 01:52:44,576:INFO:           streamlit: Not installed
+2023-03-22 01:52:44,576:INFO:             prophet: 1.1.1
+2023-03-22 01:52:44,576:INFO:None
+2023-03-22 01:52:44,598:INFO:Set Forecast Horizon.
+2023-03-22 01:52:44,598:INFO:Set up Train-Test Splits.
+2023-03-22 01:52:44,609:INFO:Preparing preprocessing pipeline...
+2023-03-22 01:52:44,609:INFO:Set up imputation for Target variable(s).
+2023-03-22 01:52:44,759:INFO:Finished creating preprocessing pipeline.
+2023-03-22 01:52:44,769:INFO:Pipeline: ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('transformer_target',
+                                                                TransformerPipeline(steps=[('numerical_imputer',
+                                                                                            Imputer(random_state=2326))])),
+                                                               ('model',
+                                                                DummyForecaster())]))])
+2023-03-22 01:52:44,769:INFO:Set up Seasonal Period.
+2023-03-22 01:52:44,801:INFO:Set up whether Multiplicative components allowed.
+2023-03-22 01:52:44,914:INFO:Creating final display dataframe.
+2023-03-22 01:52:44,971:INFO:Setup Display Container:                                           Description  \
+0                                          session_id   
+1                                              Target   
+2                                            Approach   
+3                                 Exogenous Variables   
+4                                 Original data shape   
+5                              Transformed data shape   
+6                         Transformed train set shape   
+7                          Transformed test set shape   
+8                            Rows with missing values   
+9                                      Fold Generator   
+10                                        Fold Number   
+11                        Enforce Prediction Interval   
+12                    Splits used for hyperparameters   
+13                    User Defined Seasonal Period(s)   
+14                            Ignore Seasonality Test   
+15                         Seasonality Detection Algo   
+16                             Max Period to Consider   
+17                          Seasonal Period(s) Tested   
+18                     Significant Seasonal Period(s)   
+19   Significant Seasonal Period(s) without Harmonics   
+20                                   Remove Harmonics   
+21                             Harmonics Order Method   
+22                           Num Seasonalities to Use   
+23                           All Seasonalities to Use   
+24                                Primary Seasonality   
+25                                Seasonality Present   
+26                           Target Strictly Positive   
+27                                 Target White Noise   
+28                                      Recommended d   
+29                             Recommended Seasonal D   
+30                                         Preprocess   
+31                      Numerical Imputation (Target)   
+32                            Transformation (Target)   
+33                                   Scaling (Target)   
+34  Feature Engineering (Target) - Reduced Regression   
+35                                           CPU Jobs   
+36                                            Use GPU   
+37                                     Log Experiment   
+38                                    Experiment Name   
+39                                                USI   
+
+                                                Value  
+0                                                2326  
+1                                          harga_emas  
+2                                          Univariate  
+3                                         Not Present  
+4                                           (3412, 1)  
+5                                           (3412, 1)  
+6                                           (3411, 1)  
+7                                              (1, 1)  
+8                                                5.1%  
+9                             ExpandingWindowSplitter  
+10                                                  3  
+11                                              False  
+12                                                all  
+13                                               None  
+14                                              False  
+15                                               auto  
+16                                               None  
+17  [252, 213, 55, 10, 358, 395, 254, 61, 417, 256...  
+18  [252, 213, 55, 10, 358, 395, 254, 61, 417, 256...  
+19  [252, 213, 55, 350, 358, 395, 254, 366, 417, 2...  
+20                                              False  
+21                                       harmonic_max  
+22                                                  1  
+23                                              [252]  
+24                                                252  
+25                                               True  
+26                                               True  
+27                                                 No  
+28                                                  1  
+29                                                  0  
+30                                               True  
+31                                              drift  
+32                                               None  
+33                                               None  
+34                                              False  
+35                                                 -1  
+36                                              False  
+37                                              False  
+38                                    ts-default-name  
+39                                               92c1  
+2023-03-22 01:52:44,983:INFO:Engine successfully changes for model 'auto_arima' to 'pmdarima'.
+2023-03-22 01:52:45,122:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:45,123:INFO:Engine for model 'lr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,124:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,124:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,124:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,125:INFO:Engine for model 'lar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,125:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,125:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,126:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,126:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,129:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,132:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,132:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,133:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,134:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,134:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,134:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,135:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,135:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:45,265:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:45,265:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,851:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:45,851:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,084:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,100:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,101:INFO:Engine for model 'lr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,101:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,102:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,102:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,103:INFO:Engine for model 'lar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,103:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,103:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,104:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,104:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,107:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,110:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,110:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,111:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,111:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,112:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,112:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,113:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,113:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,113:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,114:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,115:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,115:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,116:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,116:INFO:Engine successfully changes for model 'lr_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,126:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,128:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,128:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,128:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,129:INFO:Engine for model 'lar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,129:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,129:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,130:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,130:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,133:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,135:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,135:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,135:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,136:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,136:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,136:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,137:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,137:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,137:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,138:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,138:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,139:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,139:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,145:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,147:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,147:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,147:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,148:INFO:Engine for model 'lar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,148:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,149:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,149:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,149:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,151:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,153:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,154:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,154:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,154:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,155:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,155:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,155:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,155:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,155:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,156:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,156:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,156:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,156:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,157:INFO:Engine successfully changes for model 'en_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,164:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,166:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,166:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,167:INFO:Engine for model 'lar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,167:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,167:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,167:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,168:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,170:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,171:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,172:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,172:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,173:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,173:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,173:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,174:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,174:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,174:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,174:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,175:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,175:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,175:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,183:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,184:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,184:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,184:INFO:Engine for model 'lar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,185:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,185:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,185:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,186:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,188:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,190:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,190:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,190:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,191:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,191:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,191:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,192:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,192:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,192:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,192:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,193:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,193:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,193:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,193:INFO:Engine successfully changes for model 'ridge_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,201:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,204:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,206:INFO:Engine for model 'lar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,207:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,207:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,208:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,208:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,211:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,213:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,213:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,214:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,214:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,214:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,215:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,215:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,215:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,215:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,216:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,216:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,216:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,216:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,223:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,225:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,225:INFO:Engine for model 'lar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,226:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,226:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,226:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,227:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,229:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,231:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,232:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,232:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,232:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,233:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,233:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,233:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,233:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,233:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,234:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,234:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,234:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,234:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,235:INFO:Engine successfully changes for model 'lasso_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,241:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,243:INFO:Engine for model 'lar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,243:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,243:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,244:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,244:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,246:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,249:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,249:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,250:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,250:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,250:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,251:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,251:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,251:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,251:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,251:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,252:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,252:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,252:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,259:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,260:INFO:Engine for model 'lar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,261:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,261:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,261:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,262:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,264:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,267:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,267:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,268:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,268:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,268:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,268:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,269:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,269:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,269:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,269:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,270:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,270:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,270:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,271:INFO:Engine successfully changes for model 'lar_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,277:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,279:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,279:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,279:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,279:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,282:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,284:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,285:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,285:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,285:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,286:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,286:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,287:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,287:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,287:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,287:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,288:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,288:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,288:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,295:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,296:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,297:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,297:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,298:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,300:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,302:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,302:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,303:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,303:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,303:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,303:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,303:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,304:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,304:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,304:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,305:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,305:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,305:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,305:INFO:Engine successfully changes for model 'llar_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,312:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,314:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,314:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,315:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,317:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,319:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,319:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,319:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,320:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,320:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,321:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,321:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,321:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,321:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,321:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,322:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,322:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,322:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,329:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,331:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,331:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,332:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,335:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,337:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,337:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,338:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,338:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,338:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,339:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,339:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,339:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,339:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,340:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,340:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,340:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,340:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,341:INFO:Engine successfully changes for model 'br_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,347:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,351:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,351:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,353:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,355:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,356:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,356:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,356:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,356:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,357:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,357:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,357:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,357:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,358:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,358:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,358:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,358:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,366:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,368:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,369:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,371:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,372:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,373:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,373:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,373:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,374:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,374:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,374:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,374:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,374:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,375:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,375:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,375:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,375:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,376:INFO:Engine successfully changes for model 'huber_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,383:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,386:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,388:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,390:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,390:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,390:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,391:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,391:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,391:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,392:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,392:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,392:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,392:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,393:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,393:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,393:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,400:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,403:INFO:Engine for model 'par_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,406:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,408:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,408:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,408:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,409:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,409:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,409:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,409:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,410:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,410:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,410:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,410:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,411:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,411:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,411:INFO:Engine successfully changes for model 'par_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,418:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,424:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,425:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,426:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,426:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,426:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,427:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,427:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,427:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,427:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,428:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,428:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,428:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,429:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,429:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,438:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,443:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,445:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,446:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,446:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,446:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,447:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,447:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,447:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,447:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,447:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,448:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,448:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,449:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,449:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,450:INFO:Engine successfully changes for model 'omp_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,456:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,462:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,462:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,462:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,463:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,463:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,464:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,464:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,464:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,464:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,465:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,465:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,466:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,466:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,472:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,478:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,479:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,479:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,480:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,480:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,480:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,481:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,481:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,481:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,481:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,482:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,482:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,482:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,483:INFO:Engine successfully changes for model 'knn_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,489:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,495:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,496:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,496:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,497:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,497:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,498:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,498:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,498:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,498:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,499:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,499:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,499:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,505:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,512:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,512:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,512:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,513:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,513:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,514:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,514:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,514:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,514:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,515:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,515:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,515:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,516:INFO:Engine successfully changes for model 'dt_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,522:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,529:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,529:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,530:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,530:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,531:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,531:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,531:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,531:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,532:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,532:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,532:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,539:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,546:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,546:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,547:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,548:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,548:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,548:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,548:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,549:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,549:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,549:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,549:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,550:INFO:Engine successfully changes for model 'rf_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,556:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,564:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,564:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,564:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,565:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,565:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,565:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,565:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,566:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,566:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,566:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,572:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,579:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,580:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,580:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,580:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,580:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,581:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,581:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,582:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,582:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,582:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,583:INFO:Engine successfully changes for model 'et_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,589:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,611:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,612:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,614:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,614:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,615:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,616:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,617:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,617:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,618:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,629:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,641:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,642:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,642:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,643:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,643:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,644:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,645:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,645:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,645:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,647:INFO:Engine successfully changes for model 'gbr_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,660:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,674:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,674:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,674:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,674:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,675:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,676:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,676:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,676:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,689:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,701:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,701:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,702:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,702:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,702:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,703:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,703:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,703:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,704:INFO:Engine successfully changes for model 'ada_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,712:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,722:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,722:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,722:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,723:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,723:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,723:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,724:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,732:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,740:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,740:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,740:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,740:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,741:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,741:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,741:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,742:INFO:Engine successfully changes for model 'xgboost_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,749:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,758:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,759:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,759:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,760:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,760:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,760:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,768:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,776:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,776:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,777:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,777:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,777:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,777:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,778:INFO:Engine successfully changes for model 'lightgbm_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,788:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,800:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,800:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,801:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,801:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,801:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,811:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,820:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,820:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,821:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2023-03-22 01:52:46,821:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,821:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,822:INFO:Engine successfully changes for model 'catboost_cds_dt' to 'sklearn'.
+2023-03-22 01:52:46,828:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,838:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,838:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,839:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,839:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,846:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,856:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,856:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,857:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,857:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,866:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,873:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,874:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,874:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,875:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,883:INFO:Soft dependency imported: prophet: 1.1.1
+2023-03-22 01:52:46,891:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,892:INFO:Soft dependency imported: xgboost: 1.7.3
+2023-03-22 01:52:46,892:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,893:INFO:Soft dependency imported: catboost: 1.1.1
+2023-03-22 01:52:46,894:INFO:setup() successfully completed in 5.61s...............
+2023-03-22 01:52:46,994:INFO:Initializing compare_models()
+2023-03-22 01:52:46,995:INFO:compare_models(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001D815F60EB0>, include=None, fold=None, round=4, cross_validation=True, sort=MASE, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001D815F60EB0>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'MASE', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.time_series.forecasting.oop.TSForecastingExperiment'>}, exclude=None)
+2023-03-22 01:52:46,995:INFO:Checking exceptions
+2023-03-22 01:52:47,000:INFO:Preparing display monitor
+2023-03-22 01:52:47,067:INFO:Initializing Naive Forecaster
+2023-03-22 01:52:47,067:INFO:Total runtime is 0.0 minutes
+2023-03-22 01:52:47,073:INFO:SubProcess create_model() called ==================================
+2023-03-22 01:52:47,074:INFO:Initializing create_model()
+2023-03-22 01:52:47,074:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001D815F60EB0>, estimator=naive, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D815F7B6D0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-22 01:52:47,074:INFO:Checking exceptions
+2023-03-22 01:52:47,075:INFO:Importing libraries
+2023-03-22 01:52:47,075:INFO:Copying training dataset
+2023-03-22 01:52:47,087:INFO:Defining folds
+2023-03-22 01:52:47,087:INFO:Declaring metric variables
+2023-03-22 01:52:47,098:INFO:Importing untrained model
+2023-03-22 01:52:47,106:INFO:Naive Forecaster Imported successfully
+2023-03-22 01:52:47,120:INFO:Starting cross validation
+2023-03-22 01:52:47,121:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3408), n_jobs=-1
+2023-03-22 01:53:00,243:INFO:Calculating mean and std
+2023-03-22 01:53:00,248:INFO:Creating metrics dataframe
+2023-03-22 01:53:00,264:INFO:Uploading results into container
+2023-03-22 01:53:00,265:INFO:Uploading model into container now
+2023-03-22 01:53:00,266:INFO:_master_model_container: 1
+2023-03-22 01:53:00,266:INFO:_display_container: 2
+2023-03-22 01:53:00,267:INFO:NaiveForecaster()
+2023-03-22 01:53:00,267:INFO:create_model() successfully completed......................................
+2023-03-22 01:53:00,485:INFO:SubProcess create_model() end ==================================
+2023-03-22 01:53:00,486:INFO:Creating metrics dataframe
+2023-03-22 01:53:00,497:INFO:Initializing Grand Means Forecaster
+2023-03-22 01:53:00,497:INFO:Total runtime is 0.2238393505414327 minutes
+2023-03-22 01:53:00,502:INFO:SubProcess create_model() called ==================================
+2023-03-22 01:53:00,503:INFO:Initializing create_model()
+2023-03-22 01:53:00,503:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001D815F60EB0>, estimator=grand_means, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D815F7B6D0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-22 01:53:00,503:INFO:Checking exceptions
+2023-03-22 01:53:00,503:INFO:Importing libraries
+2023-03-22 01:53:00,504:INFO:Copying training dataset
+2023-03-22 01:53:00,510:INFO:Defining folds
+2023-03-22 01:53:00,510:INFO:Declaring metric variables
+2023-03-22 01:53:00,515:INFO:Importing untrained model
+2023-03-22 01:53:00,522:INFO:Grand Means Forecaster Imported successfully
+2023-03-22 01:53:00,532:INFO:Starting cross validation
+2023-03-22 01:53:00,533:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3408), n_jobs=-1
+2023-03-22 01:53:06,736:INFO:Calculating mean and std
+2023-03-22 01:53:06,749:INFO:Creating metrics dataframe
+2023-03-22 01:53:06,762:INFO:Uploading results into container
+2023-03-22 01:53:06,763:INFO:Uploading model into container now
+2023-03-22 01:53:06,764:INFO:_master_model_container: 2
+2023-03-22 01:53:06,765:INFO:_display_container: 2
+2023-03-22 01:53:06,766:INFO:NaiveForecaster(strategy='mean')
+2023-03-22 01:53:06,766:INFO:create_model() successfully completed......................................
+2023-03-22 01:53:06,976:INFO:SubProcess create_model() end ==================================
+2023-03-22 01:53:06,976:INFO:Creating metrics dataframe
+2023-03-22 01:53:07,012:INFO:Initializing Seasonal Naive Forecaster
+2023-03-22 01:53:07,012:INFO:Total runtime is 0.3324236830075582 minutes
+2023-03-22 01:53:07,020:INFO:SubProcess create_model() called ==================================
+2023-03-22 01:53:07,020:INFO:Initializing create_model()
+2023-03-22 01:53:07,020:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001D815F60EB0>, estimator=snaive, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D815F7B6D0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-22 01:53:07,020:INFO:Checking exceptions
+2023-03-22 01:53:07,021:INFO:Importing libraries
+2023-03-22 01:53:07,021:INFO:Copying training dataset
+2023-03-22 01:53:07,030:INFO:Defining folds
+2023-03-22 01:53:07,030:INFO:Declaring metric variables
+2023-03-22 01:53:07,037:INFO:Importing untrained model
+2023-03-22 01:53:07,044:INFO:Seasonal Naive Forecaster Imported successfully
+2023-03-22 01:53:07,059:INFO:Starting cross validation
+2023-03-22 01:53:07,060:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3408), n_jobs=-1
+2023-03-22 01:53:12,341:INFO:Calculating mean and std
+2023-03-22 01:53:12,344:INFO:Creating metrics dataframe
+2023-03-22 01:53:12,354:INFO:Uploading results into container
+2023-03-22 01:53:12,354:INFO:Uploading model into container now
+2023-03-22 01:53:12,355:INFO:_master_model_container: 3
+2023-03-22 01:53:12,355:INFO:_display_container: 2
+2023-03-22 01:53:12,356:INFO:NaiveForecaster(sp=252)
+2023-03-22 01:53:12,356:INFO:create_model() successfully completed......................................
+2023-03-22 01:53:12,548:INFO:SubProcess create_model() end ==================================
+2023-03-22 01:53:12,548:INFO:Creating metrics dataframe
+2023-03-22 01:53:12,566:INFO:Initializing Polynomial Trend Forecaster
+2023-03-22 01:53:12,567:INFO:Total runtime is 0.425000262260437 minutes
+2023-03-22 01:53:12,572:INFO:SubProcess create_model() called ==================================
+2023-03-22 01:53:12,572:INFO:Initializing create_model()
+2023-03-22 01:53:12,573:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001D815F60EB0>, estimator=polytrend, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D815F7B6D0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-22 01:53:12,573:INFO:Checking exceptions
+2023-03-22 01:53:12,573:INFO:Importing libraries
+2023-03-22 01:53:12,573:INFO:Copying training dataset
+2023-03-22 01:53:12,581:INFO:Defining folds
+2023-03-22 01:53:12,582:INFO:Declaring metric variables
+2023-03-22 01:53:12,587:INFO:Importing untrained model
+2023-03-22 01:53:12,593:INFO:Polynomial Trend Forecaster Imported successfully
+2023-03-22 01:53:12,603:INFO:Starting cross validation
+2023-03-22 01:53:12,604:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3408), n_jobs=-1
+2023-03-22 01:53:12,769:INFO:Calculating mean and std
+2023-03-22 01:53:12,771:INFO:Creating metrics dataframe
+2023-03-22 01:53:12,776:INFO:Uploading results into container
+2023-03-22 01:53:12,777:INFO:Uploading model into container now
+2023-03-22 01:53:12,777:INFO:_master_model_container: 4
+2023-03-22 01:53:12,777:INFO:_display_container: 2
+2023-03-22 01:53:12,778:INFO:PolynomialTrendForecaster()
+2023-03-22 01:53:12,778:INFO:create_model() successfully completed......................................
+2023-03-22 01:53:12,944:INFO:SubProcess create_model() end ==================================
+2023-03-22 01:53:12,944:INFO:Creating metrics dataframe
+2023-03-22 01:53:12,958:INFO:Initializing ARIMA
+2023-03-22 01:53:12,959:INFO:Total runtime is 0.4315394163131714 minutes
+2023-03-22 01:53:12,964:INFO:SubProcess create_model() called ==================================
+2023-03-22 01:53:12,964:INFO:Initializing create_model()
+2023-03-22 01:53:12,965:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001D815F60EB0>, estimator=arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D815F7B6D0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-22 01:53:12,965:INFO:Checking exceptions
+2023-03-22 01:53:12,965:INFO:Importing libraries
+2023-03-22 01:53:12,966:INFO:Copying training dataset
+2023-03-22 01:53:12,976:INFO:Defining folds
+2023-03-22 01:53:12,977:INFO:Declaring metric variables
+2023-03-22 01:53:12,984:INFO:Importing untrained model
+2023-03-22 01:53:12,991:INFO:ARIMA Imported successfully
+2023-03-22 01:53:13,003:INFO:Starting cross validation
+2023-03-22 01:53:13,004:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3408), n_jobs=-1
+2023-03-22 02:03:09,825:ERROR:Fit failed on ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('transformer_target',
+                                                                TransformerPipeline(steps=[('numerical_imputer',
+                                                                                            Imputer(random_state=2326))])),
+                                                               ('model',
+                                                                ARIMA(seasonal_order=(0,
+                                                                                      1,
+                                                                                      0,
+                                                                                      252)))]))])
+2023-03-22 02:03:09,826:ERROR:Unable to allocate 1.63 GiB for an array with shape (253, 253, 3410) and data type float64
+2023-03-22 02:04:10,682:ERROR:Fit failed on ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('transformer_target',
+                                                                TransformerPipeline(steps=[('numerical_imputer',
+                                                                                            Imputer(random_state=2326))])),
+                                                               ('model',
+                                                                ARIMA(seasonal_order=(0,
+                                                                                      1,
+                                                                                      0,
+                                                                                      252)))]))])
+2023-03-22 02:04:10,828:ERROR:Unable to allocate 1.63 GiB for an array with shape (253, 253, 3409) and data type float64
+2023-03-22 02:04:11,498:ERROR:Fit failed on ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('transformer_target',
+                                                                TransformerPipeline(steps=[('numerical_imputer',
+                                                                                            Imputer(random_state=2326))])),
+                                                               ('model',
+                                                                ARIMA(seasonal_order=(0,
+                                                                                      1,
+                                                                                      0,
+                                                                                      252)))]))])
+2023-03-22 02:04:11,626:ERROR:Unable to allocate 1.63 GiB for an array with shape (253, 253, 3411) and data type float64
+2023-03-22 02:04:12,646:INFO:Calculating mean and std
+2023-03-22 02:04:12,836:INFO:Creating metrics dataframe
+2023-03-22 02:04:13,139:INFO:Uploading results into container
+2023-03-22 02:04:13,139:INFO:Uploading model into container now
+2023-03-22 02:04:13,155:INFO:_master_model_container: 5
+2023-03-22 02:04:13,155:INFO:_display_container: 2
+2023-03-22 02:04:13,176:INFO:ARIMA(seasonal_order=(0, 1, 0, 252))
+2023-03-22 02:04:13,176:INFO:create_model() successfully completed......................................
+2023-03-22 02:04:14,544:WARNING:create_model() for ARIMA(seasonal_order=(0, 1, 0, 252)) raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-03-22 02:04:15,058:WARNING:Traceback (most recent call last):
+  File "c:\Users\ASUS\.conda\envs\ml\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+2023-03-22 02:04:15,058:INFO:Initializing create_model()
+2023-03-22 02:04:15,058:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001D815F60EB0>, estimator=arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D815F7B6D0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-22 02:04:15,059:INFO:Checking exceptions
+2023-03-22 02:04:15,059:INFO:Importing libraries
+2023-03-22 02:04:15,060:INFO:Copying training dataset
+2023-03-22 02:04:15,077:INFO:Defining folds
+2023-03-22 02:04:15,078:INFO:Declaring metric variables
+2023-03-22 02:04:15,091:INFO:Importing untrained model
+2023-03-22 02:04:15,109:INFO:ARIMA Imported successfully
+2023-03-22 02:04:15,126:INFO:Starting cross validation
+2023-03-22 02:04:15,130:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3408), n_jobs=-1
+2023-03-22 02:14:49,989:ERROR:Fit failed on ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('transformer_target',
+                                                                TransformerPipeline(steps=[('numerical_imputer',
+                                                                                            Imputer(random_state=2326))])),
+                                                               ('model',
+                                                                ARIMA(seasonal_order=(0,
+                                                                                      1,
+                                                                                      0,
+                                                                                      252)))]))])
+2023-03-22 02:14:49,993:ERROR:Unable to allocate 1.63 GiB for an array with shape (253, 253, 3409) and data type float64
+2023-03-22 02:15:54,018:ERROR:Fit failed on ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('transformer_target',
+                                                                TransformerPipeline(steps=[('numerical_imputer',
+                                                                                            Imputer(random_state=2326))])),
+                                                               ('model',
+                                                                ARIMA(seasonal_order=(0,
+                                                                                      1,
+                                                                                      0,
+                                                                                      252)))]))])
+2023-03-22 02:15:54,023:ERROR:Fit failed on ForecastingPipeline(steps=[('forecaster',
+                            TransformedTargetForecaster(steps=[('transformer_target',
+                                                                TransformerPipeline(steps=[('numerical_imputer',
+                                                                                            Imputer(random_state=2326))])),
+                                                               ('model',
+                                                                ARIMA(seasonal_order=(0,
+                                                                                      1,
+                                                                                      0,
+                                                                                      252)))]))])
+2023-03-22 02:15:54,034:ERROR:Unable to allocate 1.63 GiB for an array with shape (253, 253, 3411) and data type float64
+2023-03-22 02:15:54,053:ERROR:Unable to allocate 1.63 GiB for an array with shape (253, 253, 3410) and data type float64
+2023-03-22 02:15:54,964:INFO:Calculating mean and std
+2023-03-22 02:15:55,126:INFO:Creating metrics dataframe
+2023-03-22 02:15:55,284:INFO:Uploading results into container
+2023-03-22 02:15:55,289:INFO:Uploading model into container now
+2023-03-22 02:15:55,302:INFO:_master_model_container: 6
+2023-03-22 02:15:55,302:INFO:_display_container: 2
+2023-03-22 02:15:55,323:INFO:ARIMA(seasonal_order=(0, 1, 0, 252))
+2023-03-22 02:15:55,323:INFO:create_model() successfully completed......................................
+2023-03-22 02:15:56,642:ERROR:create_model() for ARIMA(seasonal_order=(0, 1, 0, 252)) raised an exception or returned all 0.0:
+2023-03-22 02:15:56,647:ERROR:Traceback (most recent call last):
+  File "c:\Users\ASUS\.conda\envs\ml\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\ASUS\.conda\envs\ml\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    assert (
+AssertionError
+
+2023-03-22 02:15:56,647:INFO:Initializing Auto ARIMA
+2023-03-22 02:15:56,647:INFO:Total runtime is 23.15967278877894 minutes
+2023-03-22 02:15:56,659:INFO:SubProcess create_model() called ==================================
+2023-03-22 02:15:56,659:INFO:Initializing create_model()
+2023-03-22 02:15:56,660:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x000001D815F60EB0>, estimator=auto_arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001D815F7B6D0>, model_only=True, return_train_score=False, kwargs={})
+2023-03-22 02:15:56,660:INFO:Checking exceptions
+2023-03-22 02:15:56,660:INFO:Importing libraries
+2023-03-22 02:15:56,662:INFO:Copying training dataset
+2023-03-22 02:15:56,675:INFO:Defining folds
+2023-03-22 02:15:56,675:INFO:Declaring metric variables
+2023-03-22 02:15:56,681:INFO:Importing untrained model
+2023-03-22 02:15:56,696:INFO:Auto ARIMA Imported successfully
+2023-03-22 02:15:56,710:INFO:Starting cross validation
+2023-03-22 02:15:56,711:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=3408), n_jobs=-1
