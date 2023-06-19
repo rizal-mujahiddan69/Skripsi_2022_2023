@@ -18,5 +18,5 @@ Alat yang Dibutuhkan <br>
 Pemrograman : Python<br>
 Library : Pycaret
 
-If you know about my summary about my thesis, check in this [powerpoint](../G64190069_Seminar_Hasil.pptx)
+If you know about my summary about my thesis, check in this [powerpoint](../../G64190069_Seminar_Hasil.pptx)
 
